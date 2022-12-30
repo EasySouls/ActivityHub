@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .selected-navbtn {
   @apply bg-sky-500;
 }
@@ -10,4 +15,9 @@
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 2.5rem;
+}
+
+.main-with-logo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
