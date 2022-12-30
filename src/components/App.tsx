@@ -6,16 +6,16 @@ import About from "./About";
 import Contact from "./Contact";
 import Programs from "./Programs";
 
-export const PageContext = createContext();
+export const PageContext = createContext("");
 
 function App() {
   const [currentPage, setCurrentPage] = useState("főoldal");
 
   return (
-    <PageContext.Provider value={(currentPage, setCurrentPage)}>
+    <PageContext.Provider value={currentPage}>
       <HashRouter>
         <Routes>
-          <Route exact path='/' element={<MainPage />} />
+          <Route path='/' element={<MainPage />} />
           <Route path='/aktualis' element={<Current />} />
           <Route path='/magunkrol' element={<About />} />
           <Route path='/programok' element={<Programs />} />
