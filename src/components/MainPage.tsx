@@ -23,7 +23,7 @@ export default function MainPage() {
     <div className='w-screen h-screen'>
       <Header />
       <div className="bg-[url(./assets/stars.jpg)] bg-cover bg-fixed">
-        <div className='bg-gray-800 text-white p-4'>
+        <div className='bg-gray-800 text-white p-4 pb-8'>
           <h1 className='text-xl uppercase mb-8'>
           Töltsd el szabadidődet élvezetesen!
           </h1>
@@ -72,7 +72,7 @@ export default function MainPage() {
           </div>
         </div>
         <div className="main-with-logo">
-          <img src="src\assets\stellar.png" alt="logo" className="m-auto h-1/3 aspect-square"/>
+          <img src="\stellar.png" alt="logo" className="m-auto h-1/3 aspect-square"/>
           <div className="text-white p-12">
             <h1 className="font-bold text-3xl mb-4">An interesting title</h1>
             <p>
