@@ -19,11 +19,12 @@ const programs = [
 
 export default function Programs() {
   const { programName } = useParams();
+  // grid-cols-1 md:grid-cols-2 lg:grid-cols-3
 
   return (
     <div className='w-screen h-screen'>
       <Header />
-      <div className='grid bg-gray-100 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+      <div className='flex bg-gray-100 min-h-fit m-auto flex-wrap justify-center py-8 gap-8'>
         {programs.map((program, id) => (
           <ProgramPreview
             title={program.title}
