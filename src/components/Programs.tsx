@@ -19,12 +19,15 @@ const programs = [
 
 export default function Programs() {
   const { programName } = useParams();
-  // grid-cols-1 md:grid-cols-2 lg:grid-cols-3
 
   return (
-    <div className='w-screen h-screen'>
+    <div className='w-screen h-screen bg-gray-100 font-open-sans'>
       <Header />
-      <div className='flex bg-gray-100 min-h-fit m-auto flex-wrap justify-center py-8 gap-8'>
+      <div className="w-full h-1/6 bg-black text-white p-6">
+        <h1 className="font-bold text-2xl mb-2">Motivációs szöveg</h1>
+        <p>A szöveg kifejtése: sok sok töltelék szöveg</p>
+      </div>
+      <div className='flex bg-gray-100 w-full lg:w-[80%] 2xl:w-[60%] m-auto flex-wrap justify-center py-10 gap-12'>
         {programs.map((program, id) => (
           <ProgramPreview
             title={program.title}

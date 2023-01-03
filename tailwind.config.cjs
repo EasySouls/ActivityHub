@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    fontFamily: {
+      "open-sans": "Open Sans, sans-serif",
+    },
     extend: {
       backgroundImage: {
         "hiking-img": "url(/hiking-img.jpg)",

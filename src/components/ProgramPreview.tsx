@@ -1,5 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import hiking_img from "../assets/hiking-img.jpg"
+import cooking_img from "../assets/cooking-img.jpg"
+import videogames_img from "../assets/videogames-img.jpg"
+import board_game_img from "../assets/board-game-img.jpg"
+import geocaching_img from "../assets/geocaching-img.jpg"
+import dnd_img from "../assets/dnd-img.jpg"
 
 export default function ProgramPreview({
   title,
@@ -19,34 +25,34 @@ export default function ProgramPreview({
   let _image: string = "";
   switch (image) {
     case "hiking-img":
-      _image = "url(src/assets/hiking-img.jpg)";
+      _image = hiking_img;
       break;
 
     case "cooking-img":
-      _image = "url(src/assets/cooking-img.jpg)";
+      _image = cooking_img;
       break;
 
     case "videogames-img":
-      _image = "url(src/assets/videogames-img.jpg)";
+      _image = videogames_img;
       break;
 
     case "board-game-img":
-      _image = "url(src/assets/board-game-img.jpg)";
+      _image = board_game_img;
       break;
 
     case "geocaching-img":
-      _image = "url(src/assets/geocaching-img.jpg)";
+      _image = geocaching_img;
       break;
 
     case "dnd-img":
-      _image = "url(src/assets/dnd-img.jpg)";
+      _image = dnd_img;
       break;
   }
 
   return (
     <div
       className='h-[200px] w-[350px] bg-red-200 bg-cover outline outline-4 outline-sky-200 hover:outline-sky-600 transition-all ease-in duration-100 delay-75 text-white flex items-center justify-center'
-      style={{ backgroundImage: _image }}
+      style={{ backgroundImage: `url(${_image})` }}
     >
       <button onClick={link} className='bg-sky-600 p-2 rounded-lg'>
         {title}

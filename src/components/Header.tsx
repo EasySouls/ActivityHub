@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import { useNavigate } from "react-router-dom";
+import logo from "../assets/stellar.png"
 
 export default function Header() {
   const navigate = useNavigate();
@@ -12,13 +13,13 @@ export default function Header() {
 
   return (
     <>
-      <div className='h-[15%] w-full bg-[url("./assets/golden-forest.jpg")] bg-cover flex items-center justify-center'>
+      <div className='h-[15%] w-full bg-[url("./assets/stars.jpg")] bg-cover flex items-center justify-center'>
         <button
           className='bg-black rounded-full h-1/2 aspect-square flex items-center'
           onClick={returnToHomepage}
         >
           <img
-            src='src/assets/stellar.png'
+            src={logo}
             alt='logo'
             className='h-3/5 m-auto'
           />
