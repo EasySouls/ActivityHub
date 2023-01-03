@@ -19,27 +19,27 @@ export default function ProgramPreview({
   let _image: string = "";
   switch (image) {
     case "hiking-img":
-      _image = "url(src/assets/hiking-img.jpg)";
+      _image = "url(/hiking-img.jpg)";
       break;
 
     case "cooking-img":
-      _image = "url(src/assets/cooking-img.jpg)";
+      _image = "url(/cooking-img.jpg)";
       break;
 
     case "videogames-img":
-      _image = "url(src/assets/videogames-img.jpg)";
+      _image = "url(/videogames-img.jpg)";
       break;
 
     case "board-game-img":
-      _image = "url(src/assets/board-game-img.jpg)";
+      _image = "url(/board-game-img.jpg)";
       break;
 
     case "geocaching-img":
-      _image = "url(src/assets/geocaching-img.jpg)";
+      _image = "url(/geocaching-img.jpg)";
       break;
 
     case "dnd-img":
-      _image = "url(src/assets/dnd-img.jpg)";
+      _image = "url(/dnd-img.jpg)";
       break;
   }
 
