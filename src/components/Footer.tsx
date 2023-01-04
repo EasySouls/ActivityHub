@@ -20,7 +20,7 @@ export default function () {
           </a>
           <a
             href='mailto:tarjanyicsanad@gmail.com'
-            className='text-amber-500 underline'
+            className='text-amber-600 underline'
           >
             tarjanyicsanad@gmail.com
           </a>

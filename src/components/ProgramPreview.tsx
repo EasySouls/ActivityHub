@@ -1,11 +1,14 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import hiking_img from "../assets/hiking-img.jpg"
-import cooking_img from "../assets/cooking-img.jpg"
-import videogames_img from "../assets/videogames-img.jpg"
-import board_game_img from "../assets/board-game-img.jpg"
-import geocaching_img from "../assets/geocaching-img.jpg"
-import dnd_img from "../assets/dnd-img.jpg"
+import hiking_img from "../assets/hiking-img.jpg";
+import cooking_img from "../assets/cooking-img.jpg";
+import videogames_img from "../assets/videogames-img.jpg";
+import board_game_img from "../assets/board-game-img.jpg";
+import geocaching_img from "../assets/geocaching-img.jpg";
+import dnd_img from "../assets/dnd-img.jpg";
+import gokart_img from "../assets/gokart-img.jpg";
+import climbing_img from "../assets/climbing-img.jpg";
+import dancing_img from "../assets/dancing-img.jpg";
 
 export default function ProgramPreview({
   title,
@@ -46,6 +49,18 @@ export default function ProgramPreview({
 
     case "dnd-img":
       _image = dnd_img;
+      break;
+
+    case "gokart-img":
+      _image = gokart_img;
+      break;
+
+    case "climbing-img":
+      _image = climbing_img;
+      break;
+
+    case "dancing-img":
+      _image = dancing_img;
       break;
   }
 
