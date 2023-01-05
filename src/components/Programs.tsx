@@ -2,14 +2,10 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import ProgramPreview from "./ProgramPreview";
 import Header from "./Header";
-import Footer from "./Footer";
+import ModernFooter from "./ModernFooter";
 
 const programs = [
-  {
-    title: "Túrázás",
-    image: "hiking-img",
-    url: "programok",
-  },
+  { title: "Túrázás", image: "hiking-img", url: "programok" },
   { title: "Társasjátékozás", image: "board-game-img", url: "/programok" },
   { title: "Főzés", image: "cooking-img", url: "/programok" },
   { title: "Geocaching", image: "geocaching-img", url: "/programok" },
@@ -40,7 +36,7 @@ export default function Programs() {
           />
         ))}
       </div>
-      <Footer />
+      <ModernFooter />
     </div>
   );
 }
