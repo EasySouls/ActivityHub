@@ -20,7 +20,7 @@ export default function Programs() {
   const { programName } = useParams();
 
   return (
-    <div className='w-screen h-screen bg-gray-100 font-open-sans'>
+    <div className='w-screen h-fit bg-gray-100 font-open-sans'>
       <Header />
       <div className='w-full h-1/6 bg-black text-white p-6'>
         <h1 className='font-bold text-2xl mb-2'>Motivációs szöveg</h1>

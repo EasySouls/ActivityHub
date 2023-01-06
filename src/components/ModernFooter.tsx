@@ -9,7 +9,7 @@ export default function ModernFooter() {
   }
 
   function subscribe(): void {
-    //* Do something
+    alert({ email } + " feliratkozott");
     setEmail("");
   }
 
