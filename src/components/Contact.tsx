@@ -71,7 +71,7 @@ export default function Contact() {
         </div>
       </div>
       <div className='w-full h-[30%] text-sm lg:text-base flex flex-col items-center justify-center gap-4 bg-slate-300'>
-        <h2>Ha van valami meglátásod, írj egy email számunkra!</h2>
+        <h2>Ha van valami meglátásod, írj egy emailt számunkra!</h2>
         <input
           required
           type='email'

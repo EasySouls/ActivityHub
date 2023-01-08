@@ -26,7 +26,7 @@ export default function Programs() {
         <h1 className='font-bold text-2xl mb-2'>Motivációs szöveg</h1>
         <p>A szöveg kifejtése: sok sok töltelék szöveg</p>
       </div>
-      <div className='flex bg-gray-100 w-full lg:w-[80%] 2xl:w-[60%] m-auto flex-wrap justify-center py-10 gap-12'>
+      <div className='flex bg-gray-100 w-full lg:w-[80%] 2xl:w-[60%] m-auto flex-wrap justify-center py-10 gap-16'>
         {programs.map((program, id) => (
           <ProgramPreview
             title={program.title}

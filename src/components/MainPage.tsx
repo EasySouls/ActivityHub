@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import ModernFooter from "./ModernFooter";
 import PostPreview from "./PostPreview";
+import logo from "../assets/stellar.png";
 
 const posts = [
   {
@@ -75,7 +76,7 @@ export default function MainPage() {
         </div>
         <div className='main-with-logo'>
           <img
-            src='\stellar.png'
+            src={logo}
             alt='logo'
             className='m-auto h-1/3 aspect-square'
           />
